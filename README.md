@@ -17,8 +17,31 @@ Installation
 - Support for elfinder
 
 
-integration
+Integration
 ========================
 - Instance $ this-> QuCkEditor () in your project
+
+#Sample
+
+<textarea id="editor"></textarea>
+<?
+    $this->QuCkEditor(
+        'editor',
+            array('Width' => "100%",
+                 'Height' => "340",
+                 'toolbar'=> array(
+                     array('Source','Maximize'),
+                     array('Templates','Styles','Format'),
+                     array('Bold','Italic','Underline','Subscript','Superscript'),
+                     array('NumberedList','BulletedList','Outdent','Indent'),
+                     array('JustifyLeft','JustifyCenter','JustifyRight'),
+                     array('Link','Unlink'),
+                     array('Image','Table')
+                 )
+            )
+    );
+?>
+
+> Sorry for the spelling errors
 
 
