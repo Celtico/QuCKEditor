@@ -1,9 +1,10 @@
 <?php
 /**
- * Insertion de NameSpace
- * Author: Cel Ticó Petit
- * Company: Cencis s.p.
- * Contact: cel@cenics.net
+ * Modification!
+ * - Insertion de NameSpace
+ * @Author: Cel Ticó Petit
+ * @Contact: cel@cenics.net
+ * @Company: Cencis s.c.p.
  */
 namespace QuCKEditor\php;
 /*
