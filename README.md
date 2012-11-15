@@ -10,11 +10,10 @@ Requirements
 
 Installation
 ========================
-- Drag a folder in modules or vendor
-- Download the latest version CKEditor and placing somewhere in the public folder
-- Enable and configure the module has application.config.php routes module.config.php
-- Check the version the php folder
-- Support for elfinder
+- Drag a folder into modules folder or vendor folder
+- Download the latest version CKEditor and place in the public folder (you can place in somewhere)
+- Enable the module application.config.php and configure the routes module.config.php
+- Check the version php
 
 
 Integration
@@ -23,6 +22,7 @@ Integration
 
 #Sample
 
+<pre>
 <textarea id="editor"></textarea>
 <?
     $this->QuCkEditor(
@@ -41,7 +41,4 @@ Integration
             )
     );
 ?>
-
-> Sorry for the spelling errors
-
-
+</pre>
