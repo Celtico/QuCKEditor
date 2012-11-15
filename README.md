@@ -1,7 +1,7 @@
 QuCKEditor
 ========================
 
-Zf2 module, for CKEditor
+Zf2 module for CKEditor
 
 Requirements
 ========================
