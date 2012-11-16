@@ -1,6 +1,3 @@
-INSTALL.txt
-LICENSE.txt
-README.txt
+src/.DS_Store
 .DS_Store
-demos/
-extras/documentation
+.gitignore
