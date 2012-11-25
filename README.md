@@ -1,7 +1,22 @@
-QuCKEditor
+QuCKEditor 1.0.1
 ========================
 
-Zf2 module for CKEditor
+ZF2 module for CKEditor
+
+Release Notes
+========================
+
+1.0.0:
+
+- Initiation CKEditor in zf2
+
+1.0.1:
+
+- Initiation auto load class map
+- Fixed capitalization inconsistencies
+- Fixed the url of the file manager
+- Optional addition of the settings in the module or directly in the helper
+- Ability to configure the language and color
 
 Requirements
 ========================
@@ -15,21 +30,26 @@ Installation
 - Enable the module application.config.php and configure the routes module.config.php
 - Check the version php
 
-
 Integration
 ========================
-- Instance $ this-> QuCkEditor () in your project
+- Instance $ this-> QuCKEditor () in your project
 
 #Sample
 
-<pre>
+```html
+
 <textarea id="editor"></textarea>
-<?
-    $this->QuCkEditor(
+
+```
+
+```php
+
+    $this->QuCKEditor(
         'editor',
             array('Width' => "100%",
-                 'Height' => "340",
-                 'toolbar'=> array(
+                  'Height' => "340",
+                  'Color' => "#000",
+                  'Toolbar'=> array(
                      array('Source','Maximize'),
                      array('Templates','Styles','Format'),
                      array('Bold','Italic','Underline','Subscript','Superscript'),
@@ -40,5 +60,5 @@ Integration
                  )
             )
     );
-?>
-</pre>
+
+```

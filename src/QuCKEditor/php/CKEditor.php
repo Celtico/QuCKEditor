@@ -1,12 +1,4 @@
 <?php
-/**
- * Modification!
- * - Insertion de NameSpace
- * @Author: Cel Ticó Petit
- * @Contact: cel@cenics.net
- * @Company: Cencis s.c.p.
- */
-namespace QuCKEditor\php;
 /*
 * Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
 * For licensing, see LICENSE.html or http://ckeditor.com/license

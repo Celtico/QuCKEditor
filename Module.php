@@ -16,9 +16,9 @@ class Module
     {
         return array(
             'factories' => array(
-                'QuCkEditor' => function ($sm) {
+                'QuCKEditor' => function ($sm) {
                     $config = $sm->getServiceLocator()->get('config');
-                    $QuCk = new View\Helper\QuCkEditor($config['QuConfig']['QuCKEditor']);
+                    $QuCk = new View\Helper\QuCKEditor($config['QuConfig']['QuCKEditor']);
                     return $QuCk;
                 },
             ),
@@ -40,6 +40,9 @@ class Module
     public function getAutoloaderConfig()
     {
         return array(
+            'Zend\Loader\ClassMapAutoloader' => array(
+                __DIR__ . '/autoload_classmap.php',
+            ),
             'Zend\Loader\StandardAutoloader' => array(
                 'namespaces' => array(
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
