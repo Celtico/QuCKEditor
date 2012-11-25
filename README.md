@@ -37,13 +37,10 @@ Integration
 #Sample
 
 ```html
-
 <textarea id="editor"></textarea>
-
 ```
 
 ```php
-
     $this->QuCKEditor(
         'editor',
             array('Width' => "100%",
@@ -60,5 +57,4 @@ Integration
                  )
             )
     );
-
 ```
