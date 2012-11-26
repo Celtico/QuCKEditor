@@ -1,0 +1,31 @@
+{
+    "name": "qu/ckeditor",
+    "description": "ZF2 module for CKEditor",
+    "type": "module",
+    "version":"1.0.0-dev",
+    "keywords": [
+        "ckeditor",
+        "zf2",
+        "module"
+    ],
+
+    "homepage": "https://github.com/Celtico/QuCKEditor",
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*"
+    },
+
+    "authors": [
+        {
+            "name": "Cel Ticó Petit",
+            "email": "cel@cenics.net",
+            "homepage": "http://www.cenics.cat",
+            "role": "Developer"
+        }
+    ],
+
+    "support": {
+        "email": "cel@cenics.net"
+    }
+}
