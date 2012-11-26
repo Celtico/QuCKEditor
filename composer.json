@@ -9,7 +9,7 @@
         "module"
     ],
 
-    "homepage": "https://github.com/Celtico/QuCKEditor",
+    "homepage": "https://github.com/Celtico/QuCKEditor/",
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=5.3.3",

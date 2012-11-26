@@ -6,11 +6,11 @@ ZF2 module for CKEditor
 Release Notes
 ========================
 
-1.0.0:
+1.0.0-dev:
 
 - Initiation CKEditor in zf2
 
-1.0.1:
+1.0.1-dev:
 
 - Initiation auto load class map
 - Fixed capitalization inconsistencies
@@ -29,6 +29,12 @@ Installation
 - Download the latest version CKEditor and place in the public folder (you can place in somewhere)
 - Enable the module application.config.php and configure the routes module.config.php
 - Check the version php
+
+### Composer / Packagist
+```
+% composer.phar require qu/ckeditor
+Please provide a version constraint for the qu/ckeditor requirement: 1.0.1-dev
+```
 
 Integration
 ========================
