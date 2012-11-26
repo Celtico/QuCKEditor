@@ -1,4 +1,4 @@
-QuCKEditor 1.0.1
+QuCKEditor 0.0.2-dev
 ========================
 
 ZF2 module for CKEditor
@@ -6,11 +6,11 @@ ZF2 module for CKEditor
 Release Notes
 ========================
 
-1.0.0-dev:
+0.0.1-dev
 
 - Initiation CKEditor in zf2
 
-1.0.1-dev:
+0.0.2-dev
 
 - Initiation auto load class map
 - Fixed capitalization inconsistencies
