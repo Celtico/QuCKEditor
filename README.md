@@ -30,11 +30,19 @@ Installation
 - Enable the module application.config.php and configure the routes module.config.php
 - Check the version php
 
-### Composer / Packagist
-```
-% composer.phar require qu/ckeditor
-Please provide a version constraint for the qu/ckeditor requirement: 1.0.1-dev
-```
+Installation by Composer
+========================
+
+In my experience, to avoid errors
+
+- cd /Users/YourName/Desktop/YourFolderProject/
+- /Applications/YourSever/bin/php/php5.3.6/bin/php /Users/YourName/Desktop/YourFolderProject/composer.phar install
+
+In the errors check and install
+
+- http://git-scm.com/downloads
+- http://getcomposer.org/download
+
 
 Integration
 ========================
