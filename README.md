@@ -32,17 +32,15 @@ Installation
 
 Installation by Composer
 ========================
+See the information if not known composer and clone git
+=========================================================
+- http://git-scm.com
+- http://getcomposer.org
 
-In my experience, to avoid errors
-
-- cd /Users/YourName/Desktop/YourFolderProject/
-- /Applications/YourSever/bin/php/php5.3.6/bin/php /Users/YourName/Desktop/YourFolderProject/composer.phar install
-
-In the errors check and install
-
-- http://git-scm.com/downloads
-- http://getcomposer.org/download
-
+```
+cd YourFolderProject/
+php composer.phar require "qu-modules/qu-ckeditor":"dev-master"
+```
 
 Integration
 ========================
