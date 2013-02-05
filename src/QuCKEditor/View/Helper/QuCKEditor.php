@@ -73,7 +73,8 @@ class QuCKEditor extends AbstractHelper
         if(isset($options['Height']))                      $CKEditor->config['height']                  = $options['Height'];
         if(isset($options['Language']))                    $CKEditor->config['language']                = $options['Language'];
         if(isset($options['Color']))                       $CKEditor->config['uiColor']                 = $options['Color'];
-
+        if(isset($options['format_tags']))                 $CKEditor->config['format_tags']             = $options['format_tags'];
+        
         // El Finder
         if(isset($options['QuElFinderBaseURL']))           $CKEditor->config['filebrowserBrowseUrl']    = $options['QuElFinderBaseURL'];
         if(isset($options['QuElFinderWindowWidth']))       $CKEditor->config['filebrowserWindowWidth']  = $options['QuElFinderWindowWidth'];
