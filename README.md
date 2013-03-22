@@ -46,6 +46,7 @@ See the information if not known composer and clone git
 
 ```
 cd YourFolderProject/
+php composer.phar self-update
 php composer.phar require "qu-modules/qu-ckeditor":"dev-master"
 ```
 
