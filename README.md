@@ -36,7 +36,6 @@ Installation
 - Drag a folder into modules folder or vendor folder
 - Move folder plugin in to public folder
 - Enable the module application.config.php and configure the routes module.config.php
-- Check the version php
 
 Installation by Composer
 ========================
