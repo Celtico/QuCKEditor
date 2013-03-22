@@ -28,13 +28,15 @@ return array(
     'QuConfig' => array(
         'QuCKEditor' => array
         (
-            'QuElFinderWindowWidth'  => "1000",
-            'QuElFinderWindowHeight' => "1000",
+            'QuElFinderWindowWidth'  => "800",
+            'QuElFinderWindowHeight' => "600",
 
             'BasePath' =>'/js/plugins/ckeditor', // Require!!
             'CKEDITOR' => array(
 
-                'filebrowserBrowseUrl'      => '/quelfinder/ckeditor',
+                'filebrowserBrowseUrl'    => '/quelfinder/ckeditor',
+                'filebrowserWindowWidth'  => "1000",
+                'filebrowserWindowHeight' => "600",
 
                 'Width'      => "100%",
                 'Height'     => "340",
