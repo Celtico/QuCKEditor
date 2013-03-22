@@ -59,18 +59,9 @@ Integration
 ```php
     $this->QuCKEditor(
         'editor',
-            array('Width' => "100%",
-                  'Height' => "340",
-                  'Color' => "#000",
-                  'Toolbar'=> array(
-                     array('Source','Maximize'),
-                     array('Templates','Styles','Format'),
-                     array('Bold','Italic','Underline','Subscript','Superscript'),
-                     array('NumberedList','BulletedList','Outdent','Indent'),
-                     array('JustifyLeft','JustifyCenter','JustifyRight'),
-                     array('Link','Unlink'),
-                     array('Image','Table')
-                 )
-            )
+        array('width' => "100%",
+            'height' => "300",
+            'uiColor'=> '#FFFFFF',
+        )
     );
 ```
