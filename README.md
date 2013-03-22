@@ -25,7 +25,7 @@ Release Notes
 Demo example
 ==================================
 
-http://a.laweb.es/quplupload
+http://qumodules.com/
 
 Requirements
 ========================
@@ -34,7 +34,7 @@ Requirements
 Installation
 ========================
 - Drag a folder into modules folder or vendor folder
-- Move folder plugin in to public folder
+- Move folder plugin in to public folder (look current version)
 - Enable the module application.config.php and configure the routes module.config.php
 
 Installation by Composer
