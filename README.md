@@ -1,4 +1,4 @@
-QuCKEditor 0.0.2-dev
+QuCKEditor 0.0.3-dev
 ========================
 
 ZF2 module for CKEditor
