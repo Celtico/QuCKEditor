@@ -18,6 +18,10 @@ Release Notes
 - Optional addition of the settings in the module or directly in the helper
 - Ability to configure the language and color
 
+0.0.3-dev
+
+- Update CKEditor 4.1
+
 Requirements
 ========================
 - ZendSkeletonApplication https://github.com/zendframework/ZendSkeletonApplication
