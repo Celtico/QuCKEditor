@@ -8,6 +8,7 @@
 namespace QuCKEditor\View\Helper;
 
 use Zend\View\Helper\AbstractHelper;
+use Zend\Json\Json;
 
 class QuCKEditor extends AbstractHelper
 {
@@ -22,7 +23,7 @@ class QuCKEditor extends AbstractHelper
      */
     public function __construct($Config)
     {
-       $this->Config = $Config;
+        $this->Config = $Config;
     }
 
     /**
@@ -31,55 +32,19 @@ class QuCKEditor extends AbstractHelper
      *
      * @return string
      */
-    public function __invoke($name,$options)
+    public function __invoke($name,$options = array())
     {
-        return $this->QuCKEditor($name,$options);
-    }
+        $options = Json::encode(array_merge(
+            $this->Config['CKEDITOR'],
+            $options
+        ), true);
 
-    /**
-     * @param $name
-     * @param $options
-     *
-     * @return string
-     */
-    public function QuCKEditor($name,$options = array()) {
+        ?>
+        <script type="text/javascript" src="<?php echo $this->view->basePath($this->Config['BasePath']) . '/ckeditor.js' ?>"></script>
+        <script type="text/javascript" >
+            CKEDITOR.replace( '<?php echo $name; ?>',<?=$options?>);
+        </script>
+    <?
 
-        $CKEditor = new \CKEditor();
-
-        $CKEditor->returnOutput = true;
-
-        /*
-         * General module configurations
-         */
-        if(isset($this->Config['QuBasePath']))             $CKEditor->basePath                          = $this->Config['QuBasePath'].'/';
-        if(isset($this->Config['Toolbar']))                $CKEditor->config['toolbar']                 = $this->Config['Toolbar'];
-        if(isset($this->Config['Width']))                  $CKEditor->config['width']                   = $this->Config['Width'];
-        if(isset($this->Config['Height']))                 $CKEditor->config['height']                  = $this->Config['Height'];
-        if(isset($this->Config['Language']))               $CKEditor->config['language']                = $this->Config['Language'];
-        if(isset($this->Config['Color']))                  $CKEditor->config['uiColor']                 = $this->Config['Color'];
-
-        // El Finder
-        if(isset($this->Config['QuElFinderBaseURL']))      $CKEditor->config['filebrowserBrowseUrl']    = $this->Config['QuElFinderBaseURL'];
-        if(isset($this->Config['QuElFinderWindowWidth']))  $CKEditor->config['filebrowserWindowWidth']  = $this->Config['QuElFinderWindowWidth'];
-        if(isset($this->Config['QuElFinderWindowHeight'])) $CKEditor->config['filebrowserWindowHeight'] = $this->Config['QuElFinderWindowHeight'];
-
-        /*
-         * Especial confirmations in your form
-         */
-        if(isset($options['QuBasePath']))                  $CKEditor->basePath                          = $options['QuBasePath'].'/';
-        if(isset($options['Toolbar']))                     $CKEditor->config['toolbar']                 = $options['Toolbar'];
-        if(isset($options['toolbar']))                     $CKEditor->config['toolbar']                 = $options['toolbar'];
-        if(isset($options['Width']))                       $CKEditor->config['width']                   = $options['Width'];
-        if(isset($options['Height']))                      $CKEditor->config['height']                  = $options['Height'];
-        if(isset($options['Language']))                    $CKEditor->config['language']                = $options['Language'];
-        if(isset($options['Color']))                       $CKEditor->config['uiColor']                 = $options['Color'];
-        if(isset($options['format_tags']))                 $CKEditor->config['format_tags']             = $options['format_tags'];
-        
-        // El Finder
-        if(isset($options['QuElFinderBaseURL']))           $CKEditor->config['filebrowserBrowseUrl']    = $options['QuElFinderBaseURL'];
-        if(isset($options['QuElFinderWindowWidth']))       $CKEditor->config['filebrowserWindowWidth']  = $options['QuElFinderWindowWidth'];
-        if(isset($options['QuElFinderWindowHeight']))      $CKEditor->config['filebrowserWindowHeight'] = $options['QuElFinderWindowHeight'];
-
-        echo $CKEditor->replace($name);
     }
 }

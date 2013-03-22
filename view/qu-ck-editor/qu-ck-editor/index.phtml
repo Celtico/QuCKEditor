@@ -1,27 +1,54 @@
 <?
-    $this->headTitle('Qu CKEditor');
+$this->headTitle('Qu CKEditor');
 ?>
-<div class="row-fluid">
-    <div class="span12">
-        <h1>Qu CKEditor</h1>
-        <textarea id="editor"></textarea>
+<div class="container">
+    <div class="row-fluid">
+
+        <div class="span12">
+            <h1>
+                Qu <a href="http://ckeditor.com/">
+                    CKEditor
+                    <small>visit website</small>
+                </a>
+            </h1>
+            <textarea id="editor"></textarea>
+        </div>
+        <?  $this->QuCKEditor(
+            'editor',
+            array('width' => "100%",
+                'height' => "300",
+                'uiColor'=> '#FFFFFF',
+
+            )
+        );
+        ?>
+    </div>
+    <hr>
+    <div class="row-fluid">
+        <div class="span3">
+            <h2>Massive inline editing</h2>
+        </div>
+        <div class="span9">
+            <div contenteditable="true" >
+                <h3>Fusce vitae porttitor</h3>
+
+                <p><strong>Lorem ipsum dolor sit amet dolor. Duis blandit vestibulum faucibus a, tortor.</strong></p>
+
+                <p>Proin nunc justo felis mollis tincidunt, risus risus pede, posuere cubilia Curae, Nullam euismod, enim. Etiam nibh ultricies dolor ac dignissim erat volutpat. Vivamus fermentum&nbsp;<a href="http://ckeditor.com/">nisl nulla sem in</a>&nbsp;metus. Maecenas wisi. Donec nec erat volutpat.</p>
+
+                <blockquote>
+                    <p>Fusce vitae porttitor a, euismod convallis nisl, blandit risus tortor, pretium. Vehicula vitae, imperdiet vel, ornare enim vel sodales rutrum</p>
+                </blockquote>
+
+                <blockquote>
+                    <p>Libero nunc, rhoncus ante ipsum non ipsum. Nunc eleifend pede turpis id sollicitudin fringilla. Phasellus ultrices, velit ac arcu.</p>
+                </blockquote>
+
+                <p>Pellentesque nunc. Donec suscipit erat. Pellentesque habitant morbi tristique ullamcorper.</p>
+
+                <p><s>Mauris mattis feugiat lectus nec mauris. Nullam vitae ante.</s></p>
+            </div>
+        </div>
     </div>
 </div>
-<?
-    $this->QuCKEditor(
-        'editor',
-            array('Width' => "100%",
-                  'Height' => "340",
-                  'Color' => "#000",
-                  'Toolbar'=> array(
-                     array('Source','Maximize'),
-                     array('Templates','Styles','Format'),
-                     array('Bold','Italic','Underline','Subscript','Superscript'),
-                     array('NumberedList','BulletedList','Outdent','Indent'),
-                     array('JustifyLeft','JustifyCenter','JustifyRight'),
-                     array('Link','Unlink'),
-                     array('Image','Table')
-                 )
-            )
-    );
-?>
+
