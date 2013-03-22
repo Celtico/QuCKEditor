@@ -22,6 +22,11 @@ Release Notes
 
 - Update CKEditor 4.1
 
+Demo example
+==================================
+
+http://a.laweb.es/quplupload
+
 Requirements
 ========================
 - ZendSkeletonApplication https://github.com/zendframework/ZendSkeletonApplication
