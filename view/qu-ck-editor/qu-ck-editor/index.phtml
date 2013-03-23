@@ -1,6 +1,6 @@
-<?
-$this->headTitle('Qu CKEditor');
-?>
+
+<?php $this->headTitle('Qu CKEditor'); ?>
+
 <div class="container">
     <div class="row-fluid">
 
@@ -13,16 +13,16 @@ $this->headTitle('Qu CKEditor');
             </h1>
             <textarea id="editor"></textarea>
         </div>
-        <?  $this->QuCKEditor(
-            'editor',
-            array('width' => "100%",
-                'height' => "300",
-                'uiColor'=> '#FFFFFF',
 
-            )
-        );
-        ?>
-    </div>
+<?php
+    $this->QuCKEditor(
+    'editor',
+        array('width' => "100%",
+            'height' => "300",
+            'uiColor'=> '#FFFFFF',
+     ));
+?>
+</div>
     <hr>
     <div class="row-fluid">
         <div class="span3">
@@ -31,37 +31,34 @@ $this->headTitle('Qu CKEditor');
         <div class="span9">
             <div contenteditable="true" >
                 <h3>Fusce vitae porttitor</h3>
-
                 <p><strong>Lorem ipsum dolor sit amet dolor. Duis blandit vestibulum faucibus a, tortor.</strong></p>
-
                 <p>Proin nunc justo felis mollis tincidunt, risus risus pede, posuere cubilia Curae, Nullam euismod, enim. Etiam nibh ultricies dolor ac dignissim erat volutpat. Vivamus fermentum&nbsp;<a href="http://ckeditor.com/">nisl nulla sem in</a>&nbsp;metus. Maecenas wisi. Donec nec erat volutpat.</p>
-
                 <blockquote>
                     <p>Fusce vitae porttitor a, euismod convallis nisl, blandit risus tortor, pretium. Vehicula vitae, imperdiet vel, ornare enim vel sodales rutrum</p>
                 </blockquote>
-
                 <blockquote>
                     <p>Libero nunc, rhoncus ante ipsum non ipsum. Nunc eleifend pede turpis id sollicitudin fringilla. Phasellus ultrices, velit ac arcu.</p>
                 </blockquote>
-
                 <p>Pellentesque nunc. Donec suscipit erat. Pellentesque habitant morbi tristique ullamcorper.</p>
-
                 <p><s>Mauris mattis feugiat lectus nec mauris. Nullam vitae ante.</s></p>
             </div>
         </div>
     </div>
 </div>
 
+
+
+
+
+
+<!-- DISQUS -->
 <div class="container">
     <div class="row">
         <div class="span12">
             <br><br>
             <div id="disqus_thread"></div>
             <script type="text/javascript">
-                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                var disqus_shortname = 'qumodules'; // required: replace example with your forum shortname
-
-                /* * * DON'T EDIT BELOW THIS LINE * * */
+                var disqus_shortname = 'qumodules';
                 (function() {
                     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
                     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
