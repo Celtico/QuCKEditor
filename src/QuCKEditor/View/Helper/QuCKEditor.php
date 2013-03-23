@@ -42,7 +42,7 @@ class QuCKEditor extends AbstractHelper
         ?>
         <script type="text/javascript" src="<?php echo $this->view->basePath($this->Config['BasePath']) . '/ckeditor.js' ?>"></script>
         <script type="text/javascript" >
-            CKEDITOR.replace( '<?php echo $name; ?>',<?=$options?>);
+            CKEDITOR.replace( '<?php echo $name; ?>',<?php echo $options?>);
         </script>
     <?
 
