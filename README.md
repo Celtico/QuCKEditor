@@ -33,16 +33,12 @@ Requirements
 
 Installation
 ========================
-- Drag a folder into modules folder or vendor folder
-- Move folder plugin in to public folder (look current version)
+- Drag a folder into modules folder
+- Move folder plugin in to public/js folder (look current version http://ckeditor.com/)
 - Enable the module application.config.php and configure the routes module.config.php
 
 Installation by Composer
 ========================
-See the information if not known composer and clone git
-=========================================================
-- http://git-scm.com
-- http://getcomposer.org
 
 ```
 cd YourFolderProject/
