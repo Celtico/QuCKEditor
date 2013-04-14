@@ -34,7 +34,7 @@ Requirements
 Installation
 ========================
 - Drag a folder into modules folder
-- Move folder plugin in to public/js folder (look current version http://ckeditor.com/)
+- QuAdminCompleteApp provider assets (look current version http://ckeditor.com/)
 - Enable the module application.config.php and configure the routes module.config.php
 
 Installation by Composer
