@@ -44,7 +44,7 @@ class QuCKEditor extends AbstractHelper
         <script type="text/javascript" >
             CKEDITOR.replace( '<?php echo $name; ?>',<?php echo $options?>);
         </script>
-    <?
+    <?php
 
     }
 }
